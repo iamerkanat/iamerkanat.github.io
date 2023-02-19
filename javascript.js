@@ -1,4 +1,4 @@
-
+alert('Hello World!');
 var music = ["My Mind & Me", "Born To Die", "You're Somebody Else"];
 var artist = ['Selena Gomez', 'Flora Cash', 'Lana Del Rey'];
 
@@ -38,4 +38,5 @@ document.querySelector("#button5").onclick = function(){
 
     const button = document.querySelector("#button5");
     button.innerText = "SOLD!!!";
+
 }
