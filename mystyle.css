@@ -44,7 +44,7 @@ background-color: black;}
 
 .clock {
     position: absolute;
-    top: 50%;
+    top: 18%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #f6c620;
@@ -113,6 +113,13 @@ p2{
 
 @media screen and (max-width: 768px){
     .items{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .clock{
         grid-template-columns: repeat(1, 1fr);
 
     }
