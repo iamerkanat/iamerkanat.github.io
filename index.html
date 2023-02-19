@@ -10,7 +10,7 @@ body {
   font-family: "Dubai Light", "Berlin Sans FB",sans-serif;
   margin: 0;
   background-image:
-  url('just-back.jpg');
+  url('img/just-back.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -30,6 +30,8 @@ html {
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
+  grid-template-columns: repeat(3, 1fr);
+
 }
 
 .card {
@@ -37,18 +39,8 @@ html {
   margin: 8px;
 }
 
-.about-section {
-  padding: 50px;
-  text-align: left;
-  background-color: #474e5d;
-  color: white;
-}
-.art-section {
-  padding: 100px;
-  text-align: right;
-  background-color: #474e5d;
-  color: white;
-}
+
+
 
 .container {
   padding-top: 0;
@@ -64,7 +56,7 @@ html {
 }
 
 .title {
-  color: grey;
+  color: red;
 }
 
 .button {
@@ -94,27 +86,86 @@ html {
 </head>
 <body>
 
-<div class="about-section">
-  <h1>About ME</h1>
-  <h2>Mr. ERKANAT</h2>
-  <p2>Man of the year by Times 2005</p2>
-</div>
 
-<h2 style="text-align:center"></h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="2711EB96-3184-4016-9C2C-50601E1A3D79.jpeg" alt="erkanat" style="width:100%">
+  <h1>Mr. ERKANAT</h1>
+  <nav>
+    <ul>
+      <a href="#"><li>About ME</li></a>
+      <a href="#"><li>Portfolio</li></a>
+      <a href="#"><li>Skills</li></a>
+
+
+    </ul>
+  </nav>
+
+  <section class="items">
+    <div class="item">
+
+          <div class="card">
+      <img src="img/C91F1B2B-F2D4-4DE1-8973-488198842593.JPG" >
+            <div class="container">
+      <h4>tiRED</h4>
+      <button>buy</button>
+    </div>
+          </div>
+        </div>
+
+
+
+    <div class="item">
+      <img src="img/me.JPG" style="width:100%">
+      <h4>FEeling Blue</h4>
+      <button>buy</button>
+    </div>
+    <div class="item">
+      <img src="img/625E6C68-7115-4DA5-86F6-F43528D56855_Original.JPG" style="width:100%">
+      <h4>BORing</h4>
+      <button>buy</button>
+    </div>
+
+    <div class="item">
+      <img src="img/DF98AAF3-A91E-4C73-9C70-6ADC84551E64.JPG" style="width:100%">
       <div class="container">
-        <h2>ERKANAT O</h2>
-        <p class="title">CEO & Founder</p>
-        <p3>I don't know how to be a true professional person, but I am my own man...</p3>
-        <p1>iamerkanat@gmail.com</p1>
-        <p><button class="button">Hangout</button></p>
+      <h4>Batsi</h4>
+      <button>buy</button>
+    </div>
+    </div>
+
+    <div class="item">
+      <img src="img/7310519C-A302-424A-82CA-EFF5782DD0E4.JPG" style="width:100%">
+      <h4>Angel</h4>
+      <button>buy</button>
+    </div>
+
+    <div class="item">
+      <img src="img/IMG_1124_Original.JPG" style="width:100%">
+      <h4>Vengeance</h4>
+      <button>buy</button>
+    </div>
+
+
+
+  </section>
+
+
+
+
+  <h2 style="text-align:center"></h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="img/2711EB96-3184-4016-9C2C-50601E1A3D79.jpeg" alt="erkanat" style="width:100%">
+        <div class="container">
+          <h3>ERKANAT O</h3>
+          <p class="title">CEO & Founder</p>
+          <p3>I don't know how to be a true professional person, but I am my own man...</p3>
+          <p1>iamerkanat@gmail.com</p1>
+          <p><button class="button">Hangout</button></p>
+        </div>
       </div>
     </div>
   </div>
-  </div>
+
 
 
 
