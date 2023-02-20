@@ -1,4 +1,4 @@
-alert('Hello World!');
+
 var music = ["My Mind & Me", "Born To Die", "You're Somebody Else"];
 var artist = ['Selena Gomez', 'Flora Cash', 'Lana Del Rey'];
 
@@ -94,3 +94,5 @@ const calcAvg = function(a, b){
 }
 const avg = calcAvg(5,7);
 console.log("average of:"+" "+avg)
+
+alert('Hello World!'+go);
