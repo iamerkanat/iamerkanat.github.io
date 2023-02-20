@@ -72,3 +72,25 @@ function showTime(){
 }
 
 showTime();
+
+
+
+var time = "morning";
+var name="client";
+const go = function(){
+	console.log("Good", time, name);
+};
+
+
+for(let i = 0; i< 5; i++){
+console.log("Hello World", i+1);
+    
+}
+go("Afternoon client");
+	
+const calcAvg = function(a, b){
+	return(a+b/2);
+	console.log("Good", time, name);
+}
+const avg = calcAvg(5,7);
+console.log("average of:"+" "+avg)
