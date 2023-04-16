@@ -23,6 +23,17 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "Hello, %s!", name)
 }
+//json is for creating a simple JSON response and sets the Content-Type header to application/json
+func jsonHandler(w http.ResponseWriter, r *http.Request) {
+    data := map[string]string{"message": "Hello, JSON!"}
+    jsonBytes, err := json.Marshal(data)
+    if err != nil {
+        http.Error(w, "Internal server error", http.StatusInternalServerError)
+        return
+    }
+    w.Header().Set("Content-Type", "application/json")
+    w.Write(jsonBytes)
+}
 
 // registering the home and about handlers with the default HTTP server:
 func main() {
