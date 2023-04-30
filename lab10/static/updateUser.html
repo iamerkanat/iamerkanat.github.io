@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+<div>
+  <h1>Update User</h1>
+  <form method="POST" action="/updateUserByID">
+    <input name="id" type="hidden" value={{.User_id}} />
+    <label>Full Name</label><input name="name" type="text" value={{.FullName}} /> <br> <br>
+    <label>Role</label><input name="role" type="text" value={{.Role}} /> <br>
+    <input type="submit" value="submit" />
+  </form>
+</div>
+</body>
+</html>

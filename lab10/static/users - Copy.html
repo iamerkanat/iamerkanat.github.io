@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Users</title>
+    <style>
+      th, td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All users:</h1>
+    <table>
+      	<tr>
+          <th>fullName</th>
+          <th>role</th>
+          <th>created at</th>
+    	</tr>
+      	{{range .}}
+      			<tr>
+              		<td>{{.FullName}}</td>
+                  <td>{{.Role}}</td>
+                  <td>{{.Created_at}}</td>
+      			</tr>
+      	{{end}}
+    </table>
+    <br>
+    <button><a href="index.html">Go to main page</a></button>
+  </body>
+</html>
