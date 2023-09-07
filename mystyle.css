@@ -43,10 +43,8 @@ background-color: black;}
 
 
 .clock {
-    position: relative;
-    top: 18%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
     color: #f6c620;
     font-size: 25px;
     font-family: Orbitron;
