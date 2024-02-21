@@ -89,12 +89,17 @@ html {
 
   <h1>Mr. ERKANAT</h1>
   <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-  <nav>
+  <nav class="active" id="nav">
     <ul>
-      <a href="/aboutme.html"><li>About ME</li></a>
-      <a href="/portfolio.html"><li>Portfolio</li></a>
-      <a href="/skills.html"><li>Skills</li></a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#aboutme.html">About</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
+    <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+    </button>
   </nav>
 
   <section class="items">
@@ -168,8 +173,8 @@ html {
   
 
 
-<script src="javascript.js"></script>
-/!
+<script src="script.js"></script>
+
 
 </body>
 </html>
