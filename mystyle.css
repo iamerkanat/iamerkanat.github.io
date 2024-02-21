@@ -10,15 +10,14 @@
 
 body{
     font-family: 'Fira Code', sans-serif;
-    box-sizing: border-box;
-    overflow: hidden;
+    
+    height: 100vh;
+    
     margin: 0;
-    background-image:
-    url('img/just-back.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-     
+    background-color: #eafbff;
+    background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #c71414 50%, #c71414 100%);
+    color: black;
+    scroll-behavior: smooth;
 }
 .Erkanat {
     text-align: center;
@@ -144,7 +143,7 @@ p2{
 
 .items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     padding: 30px 20px;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
@@ -156,6 +155,10 @@ p2{
     object-fit: cover;
     cursor: pointer;
     transition: 0.2s ease;
+    margin:0;
+    padding:0;
+    position:relative;
+    bottom: -10px;
 }
 
 .item img:hover{
@@ -163,12 +166,13 @@ p2{
 }
 
 .item h4{
-    padding: 5px;
+    padding: 25px 10px 10px;
+    margin:0;
     text-align: center;
 }
 
 .item button{
-    padding: 5px 30px;
+    padding: 15px 30px;
     border: none;
     outline: none;
     background-color: darkred;
@@ -194,30 +198,28 @@ p2{
   
   }
   
-  .card {
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
+    margin: 0;
+    padding: 0;
   }
   
   
-  .container {
+ .container {
+    margin:0;
     padding-top: 0;
     padding-right: 16px;
     padding-left: 16px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
+    background-color:#eaeaf5;
   }
   
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
   
-  .title {
+.title {
     color: red;
   }
   
-  .button {
+.button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -229,7 +231,7 @@ p2{
     width: 100%;
   }
   
-  .button:hover {
+.button:hover {
     background-color: #555;
   }
   
