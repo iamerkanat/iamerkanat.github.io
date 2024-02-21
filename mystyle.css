@@ -1,19 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:wght@300..700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Code', sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
+
+body{
+    font-family: 'Fira Code', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    background-image:
+    url('img/just-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     
+}
+.Erkanat {
+    text-align: center;
+    color: #b8b8dc;
+    margin: 0px;
+    padding: 20px 10px 5px 0px;
+    background-color: #545454;
+}
+
+
+.clock {
+    display: flex;
+    justify-content: center;
+    color: #f6c620;
+    font-size: 25px;
+    font-family: Orbitron;
+    letter-spacing: 5px;
+    background-color: #545454;
+    padding-bottom: 15px
+
+
+}
+panel{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+    font-size: 1rem;
+}
+
 nav{
     background-color: white;
     padding: 20px;
-    width: 80px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,11 +89,12 @@ nav.active ul li{
     transform: rotateY(360deg);
 }
 
-nav.active:hover, nav.active:focus{
-    background-color: rgb(210, 65, 65);
-
+nav ul a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
 }
-
 
 .icon{
     background-color: white;
@@ -95,27 +134,7 @@ nav.active .icon .line2{
     transform: rotate(765deg) translateY(-5.5px)
 }
 
-h1 {
-    text-align: center;
-    color: #b8b8dc;
-    margin-left: 0px;
-    padding: 20px;
-    background-color: #545454;
-}
 
-
-.clock {
-    display: flex;
-    justify-content: center;
-    color: #f6c620;
-    font-size: 25px;
-    font-family: Orbitron;
-    letter-spacing: 5px;
-    background-color: #545454;
-
-
-
-}
 
 
 p2{
@@ -165,6 +184,61 @@ p2{
 .item button:hover{
     transform: scale(1.08);
 }
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    grid-template-columns: repeat(3, 1fr);
+  
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  
+  .container {
+    padding-top: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 0;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: red;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
 @media screen and (max-width: 1000px){
     .items{
         grid-template-columns: repeat(2, 1fr);
